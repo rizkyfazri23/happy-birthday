@@ -298,12 +298,14 @@ const animationTimeline = () => {
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
+    const audio = document.querySelector("audio");
+    audio.currentTime = 0;
     tl.restart();
   });
 };
 
 var music = document.getElementsByTagName("audio")[0];
-music.volume = 0.3; //atur volume menjadi 50%
+music.volume = 0.2; //atur volume menjadi 50%
 
 // Run fetch and animation in sequence
 fetchData();
