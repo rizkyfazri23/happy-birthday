@@ -302,5 +302,8 @@ const animationTimeline = () => {
   });
 };
 
+var music = document.getElementsByTagName("audio")[0];
+music.volume = 0.3; //atur volume menjadi 50%
+
 // Run fetch and animation in sequence
 fetchData();
